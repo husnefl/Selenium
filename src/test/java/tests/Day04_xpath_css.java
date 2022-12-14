@@ -42,10 +42,4 @@ public class Day04_xpath_css {
     public void tearDown(){
         driver.quit();
     }
-
-    /*
-    *
-    *
-    *
-    * */
 }
