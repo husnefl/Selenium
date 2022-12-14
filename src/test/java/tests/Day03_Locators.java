@@ -40,6 +40,7 @@ public class Day03_Locators {
         String actualURL = driver.getCurrentUrl();
         String expectedURL = "https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index";
         Assert.assertEquals("LOGIN FAILED",expectedURL,actualURL);//If login successful PASS, if not FAIL and print message LOGIN FAILED"
+//
 //      NOTE : We do not need to use containers. We can use method chain in selenium
 //        driver.findElement(By.name("username")).sendKeys("Admin");
 //        driver.findElement(By.name("password")).sendKeys("admin123");

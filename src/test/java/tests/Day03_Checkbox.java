@@ -23,14 +23,14 @@ public class Day03_Checkbox {
     }
     @Test
     public void checkboxTest(){
-//Locationg checkbox 1 and checkbox2
+//        Locating checkbox 1 and checkbox2
         WebElement checkbox1 = driver.findElement(By.id("box1"));
         WebElement checkbox2 = driver.findElement(By.id("box2"));
 //        Click on the checkbox 1 if it is NOT already selected
         if (!checkbox1.isSelected()){//isSelected() returns true id checkbox is checked, returns false if checkbox is not checked
             checkbox1.click();
         }
-//        Then click on checkbox2 if box is not selected
+//        Then click on checkbox2 if box is not already selected
         if (!checkbox2.isSelected()){
             checkbox2.click();
         }

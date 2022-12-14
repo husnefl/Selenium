@@ -17,7 +17,7 @@ public class Day03_Assertions {
         assertFalse(true); -> fail
         --------------------
          */
-        Assert.assertEquals(5,5);//FAIL
+        Assert.assertEquals(5,5);//pass
         if("Java".contains("apple")){//FAIL
             System.out.println("PASS");
         }else{
@@ -28,7 +28,7 @@ public class Day03_Assertions {
 //        --------------------
         Assert.assertTrue("java".contains("j"));//PASS
 //        --------------------
-        Assert.assertFalse("Java".contains("j"));//PASS
+        Assert.assertFalse("Java".contains("j"));//PASS cauz:AssertFalse = statement("Java".contains("j") false = pass
 //        TEST EXECUTION STOPS IF ONE THE ASSERTION FAILS. THIS IS CALLED HARD ASSERTIOS
 //        TEST EXECUTION CONTINUES EVEN IF TEST VERRIFICATION FAILS. VERIFICATION MEANS LIKE IF STATEMENT
 //        What is difference between Assertion and Verification?
