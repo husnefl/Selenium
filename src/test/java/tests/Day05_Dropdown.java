@@ -27,5 +27,6 @@ public class Day05_Dropdown {
         Select select = new Select(dropdown);
 //        3. Select any option using the select object
         select.selectByIndex(1);//index starts option1
+
     }
 }

@@ -67,6 +67,7 @@ public class Day_05JavaFaker {
         System.out.println(randomDigits);
 
 
+
     }
 
 }
