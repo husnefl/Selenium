@@ -39,6 +39,7 @@ public class Day05_dynamic_xpath {
         WebElement passwordText1 = driver.findElement(By.xpath("//*[contains(text(),'Passw')]"));//accepts partial text
         Assert.assertTrue(passwordText1.isDisplayed());
     }
+
     @After
     public void tearDown(){
         driver.quit();

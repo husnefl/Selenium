@@ -25,7 +25,10 @@ public class Day05_Dropdown {
         WebElement dropdown = driver.findElement(By.id("dropdown"));
 //        2. Create Select object cause dropdown is in the select tag. this is for only dropdowns
         Select select = new Select(dropdown);
-//        3. Select any option using the select object
+//
+//
+//       3. Select any option using the select object
+
         select.selectByIndex(1);//index starts option1
 
     }
