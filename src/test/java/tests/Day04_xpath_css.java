@@ -46,9 +46,9 @@ public class Day04_xpath_css {
      * ---id, name, className, linkText, tagName, partialLinkText, xpath, css
      * Which one do you prefer? Why?
      * ---Ahmet's answer :
-     * -First If there is an ID i use id, cause id is unique and faster
+     * -First If there is an ID i use id, because id is unique and faster
      * -If there is no id then i use name if there is a unique name
-     * -I also sometime create dynamic xpath. Because some elements do not have stable attributes like id and name. And I can write xpath for any element.
+     * -I also sometimes create dynamic xpath. Because some elements do not have stable attributes like id and name. And I can write xpath for any element.
      * -I sometimes even use css selector instead of xpath. But i personally use xpath more than css.
      * What is difference between absolute xpath and relative xpath?
      * -Absolute xpath we start from the parent and go child elements one by one

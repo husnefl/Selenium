@@ -33,7 +33,6 @@ public class Day05_RadioButton {
         Assert.assertTrue(footballOption.isSelected());//Verifying the football option is selected
     }
 
-
     @After
     public void tearDown() {
         driver.quit();

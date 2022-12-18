@@ -7,7 +7,7 @@ public class Day_05JavaFaker {
 
 /*
     TEST DATA : username, password, URL, test environment, city, ssn,...
-            -Where do you get your test data?
+            -Where do you get your test data?(Who gives you data?)
             -BA-Business Analyst(Writes the acceptance criteria(AC))
             -Test Lead
             -Manual Tester
@@ -65,8 +65,6 @@ public class Day_05JavaFaker {
 //      random digit number
        String randomDigits =faker.number().digits(10);
         System.out.println(randomDigits);
-
-
     }
 
 }
