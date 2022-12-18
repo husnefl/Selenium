@@ -120,7 +120,6 @@ Assert if ‘Appliances’ is a drop down option. Print true if “Appliances”
 BONUS: Assert if the dropdown is in Alphabetical Order
  */
 
-
     /*
     homework 2
  Create a new class : GoogleSearchTest

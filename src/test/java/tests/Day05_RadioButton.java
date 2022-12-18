@@ -10,8 +10,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 public class Day05_RadioButton {
-    WebDriver driver;
 
+    WebDriver driver;
     @Before
     public void setUp() {
         WebDriverManager.chromedriver().setup();
