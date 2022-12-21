@@ -22,4 +22,5 @@ public class Day09_FileDownloadTest extends TestBase {
         boolean isDownloaded = Files.exists(Paths.get(filePath));
         Assert.assertTrue(isDownloaded);
     }
+
 }
