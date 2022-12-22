@@ -17,8 +17,8 @@ public abstract class TestBase {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));//15 seconds wait in case needed
         driver.manage().window().maximize();
     }
-    //@After
-   // public void tearDown() {
-     //   driver.quit();
+  //  @After
+  // public void tearDown() {
+       // driver.quit();
    // }
 }

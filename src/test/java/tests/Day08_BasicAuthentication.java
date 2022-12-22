@@ -10,9 +10,11 @@ public class Day08_BasicAuthentication extends TestBase {
     @Test
     public void authTest(){
         /*
+        Authentications are used for security reason(Dogrulama,dogurulugunu ispat etme)
         username : admin
         pass     : admin
         url      : the-internet.herokuapp.com/basic_auth
+        SPECIAL URL FOR AUTHENTICATION
         GO LINK  : https://username:pass@url
          */
         //this will do authentication

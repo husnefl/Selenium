@@ -3,7 +3,7 @@ package tests;
 import com.github.javafaker.Faker;
 import org.junit.Test;
 
-public class Day_05JavaFaker {
+public class Day05_JavaFaker {
 
 /*
     TEST DATA : username, password, URL, test environment, city, ssn,...

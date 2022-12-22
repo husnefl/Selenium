@@ -44,18 +44,21 @@ public class Day08_WindowHandle2 extends TestBase {
 
     @Test
     public void newTabTest() throws InterruptedException {
-        //        open techproeducation on tab 1
+//      open techproeducation on tab 1
         driver.get("https://www.techproeducation.com");
         String techProTitle = driver.getTitle();
         Assert.assertTrue(techProTitle.contains("Techpro Education"));
         String techProHandle = driver.getWindowHandle();//getting tab 1 id
         Thread.sleep(3000);
-//        open amazon on a new tab 2
+
+//      open amazon on a new tab 2
         driver.switchTo().newWindow(WindowType.TAB);//creates a new tab and switches to that tab automatically
         driver.get("https://www.amazon.com");
         String amazonTitle = driver.getTitle();
         Assert.assertTrue(amazonTitle.contains("Amazon"));
         String amazonHandle = driver.getWindowHandle();//getting tab 2 id
+
+
 //        open linkedin on a new tab 3
         Thread.sleep(3000);
         driver.switchTo().newWindow(WindowType.TAB);//creates a new tab and switches to that tab automatically
@@ -64,6 +67,8 @@ public class Day08_WindowHandle2 extends TestBase {
         Assert.assertTrue(linkedinTitle.contains("LinkedIn"));
         String linkedinHandle = driver.getWindowHandle();//getting tab 3 id
         Thread.sleep(3000);
+
+
         //Switch back to Techpro
         driver.switchTo().window(techProHandle);
         System.out.println("TechPro : " + driver.getCurrentUrl());
