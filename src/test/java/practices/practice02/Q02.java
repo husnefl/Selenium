@@ -1,5 +1,4 @@
 package practices.practice02;
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -8,11 +7,10 @@ import utilities.TestBase;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-
 import static org.junit.Assert.assertTrue;
 
 public class Q02 extends TestBase {
-       /*
+          /*
     Given
         Go to https://www.jqueryscript.net/demo/Easy-iFrame-based-Twitter-Emoji-Picker-Plugin-jQuery-Emoojis/
     When
@@ -38,13 +36,12 @@ public class Q02 extends TestBase {
 
         //Click on the "Animals and Nature" emoji
         driver.findElement(By.xpath("(//span[@data-upgraded=',MaterialRipple'])[2]")).click();
-
         //Click all the "Animals and Nature"  emoji elements
         List<WebElement> emojis = driver.findElements(By.xpath("//div[@id='nature']/div/img"));//64 elements
 
 //        for(WebElement w : emojis){
 //            w.click();
-//       }
+//        }
 
         //Using lambda is recommended
         emojis.forEach(WebElement::click);

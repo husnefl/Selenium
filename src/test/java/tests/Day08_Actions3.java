@@ -20,7 +20,7 @@ public class Day08_Actions3 extends TestBase {
 //        Thread.sleep(3000);
 
 //       CHAIN METHOD
-//       .build() is recommended to be used when we chain multiple functuon to make sure th connection is strong .
+//       .build() is recommended to be used when we chain multiple function to make sure th connection is strong .
 //       .perform() is used when there is single or multiple commends to execute the action
         actions.
                 sendKeys(Keys.PAGE_DOWN).
