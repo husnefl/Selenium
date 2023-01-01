@@ -1,9 +1,7 @@
 package practices.practice03;
-
 import org.junit.Test;
 import org.openqa.selenium.By;
 import utilities.TestBase;
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
@@ -35,8 +33,7 @@ public class Q02 extends TestBase {
         //Select the file to upload
         //Click "Choose File" button
         String userHome = System.getProperty("user.home");
-        driver.findElement(By.name("upfile")).sendKeys(userHome + "/Desktop/text.txt");
-
+        driver.findElement(By.name("upfile")).sendKeys(userHome+"/Desktop/txt");
         //Click on "Press" button
         driver.findElement(By.xpath("//input[@type='submit']")).click();
 
@@ -47,5 +44,6 @@ public class Q02 extends TestBase {
         //Assert that file Content contains "Hello, I am uploaded file"
         String fileContent = driver.findElement(By.xpath("//pre")).getText();
         assertTrue(fileContent.contains("Hello, I am uploaded file"));
+
     }
 }

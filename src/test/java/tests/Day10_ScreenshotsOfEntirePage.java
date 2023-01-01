@@ -10,6 +10,7 @@ public class Day10_ScreenshotsOfEntirePage extends TestBase {
 //        Given user search for ‘uni’
         driver.get("https://testcenter.techproeducation.com/index.php?page=autocomplete");
 //      TAKE A SCREENSHOT. CREATE A REUSABLE METHOD AND CALL THAT METHOD
+        Thread.sleep(2000);
         takeScreenshotOfPage();
 //       COMPLETE AS HOMEWORK
 //        And select United Kingdom
@@ -19,6 +20,7 @@ public class Day10_ScreenshotsOfEntirePage extends TestBase {
 //       And select the ‘United Kingdom’ from the suggestions
         driver.findElement(By.xpath("//div[@id='myCountryautocomplete-list']//div[.='United Kingdom']")).click();
 //        TAKE SCREENSHOT
+        Thread.sleep(2000);
         takeScreenshotOfPage();
 //        Add click on submit button
         //    And click on submit button

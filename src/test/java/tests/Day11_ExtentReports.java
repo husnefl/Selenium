@@ -37,20 +37,21 @@ public class Day11_ExtentReports extends TestBase {
         extentReports.setSystemInfo("Team", "Eagles");
         extentReports.setSystemInfo("SQA", "John Fox");
 
-//        adding more custom info
+//        adding more custom config info
         extentHtmlReporter.config().setReportName("TechProEd home page");
         extentHtmlReporter.config().setDocumentTitle("TechProEd extent reports");
 
 //        ********************
-//        DONE WITH CONFIGURATION
+//        DONE WITH CONFIGURATION(Attach Reporter)
         extentReports.attachReporter(extentHtmlReporter);
-//    //        SUMMARY: Extent Reports and Extent HTML Reporter is used to add custom information on the report and create the report in a PATH
+//        SUMMARY: Extent Reports and Extent HTML Reporter is used to add custom information on the report and create the report in a PATH
 //        REPORT IS DONE. NOW CREATING EXTENT TEST TO LOG INFO IN THE TEST CASE
 //        Creating extent test
         extentTest = extentReports.createTest("My Extent Reporter", "Regression Test Report");
     }
     @Test
     public void extentReportsTest(){
+        //use the report
         driver.get("https://www.techproeducation.com");
         extentTest.pass("User is on TechPro Education Home page");
 //        click on LMS

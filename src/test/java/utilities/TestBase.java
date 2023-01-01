@@ -51,18 +51,18 @@ public abstract class TestBase {
         File image = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 //        2. Creating a PATH and dynamic name for the image
         String currentTime = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());//getting the current local date and time
-//        path is where we save the screenshot. PROJECT/FOLDER    /FOLDER     /NAME OF IMAGE  .png
+//     path is where we save the screenshot. PROJECT      /FOLDER    /FOLDER     /NAME OF IMAGE  .png
         String path = System.getProperty("user.dir")+"/test-output/Screenshots/"+currentTime+"image.png";//Where we save the image
 //        3. Saving the IMAGE in the PATH
         FileUtils.copyFile(image,new File(path));
     }
     //    TAKE SCREENSHOT OF SPECIFIC ELEMENT
-    public void takeScreenshotOfTheElement(WebElement element) throws IOException {
+       public void takeScreenshotOfTheElement(WebElement element) throws IOException {
 //        1. take screenshot
         File image = element.getScreenshotAs(OutputType.FILE);
 //        2. Creating a PATH and dynamic name for the image
         String currentTime = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());//getting the current local date and time
-//        path is where we save the screenshot. PROJECT/FOLDER    /FOLDER     /NAME OF IMAGE  .png
+//  path is where we save the screenshot.PROJECT      /FOLDER       /FOLDER     /DYNAMIC NAME OF IMAGE  .png
         String path = System.getProperty("user.dir")+"/test-output/Screenshots/"+currentTime+"image.png";//Where we save the image
 //        3. Saving the IMAGE in the PATH
         FileUtils.copyFile(image,new File(path));
