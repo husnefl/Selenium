@@ -17,7 +17,7 @@ public class Day12_WriteExcel {
 //        Go to the first row
         Row row1 = sheet1.getRow(0);
 //        Create a cell on the 3rd column (2nd index) on the first row
-        Cell r1c3 = row1.createCell(2);
+        Cell r1c3 = row1.createCell(2);//create means on Excel "click" yani yeni bir kutucuk "cell" ac demektir."Set Cell Value for example:("Population")
 //        Write “POPULATION” on that cell
         r1c3.setCellValue("POPULATION");
 //        Create a cell on the 2nd row 3rd cell(index2), and write 150000
@@ -25,9 +25,9 @@ public class Day12_WriteExcel {
 //        Create a cell on the 3rd row 3rd cell(index2), and write 250000
         sheet1.getRow(2).createCell(2).setCellValue("250000");
 //        Create a cell on the 4th row 3rd cell(index2), and write 54000
-        sheet1.getRow(3).createCell(2).setCellValue("54000");
+        sheet1.getRow(3).createCell(2).setCellValue("540000");
 //        Write and save the workbook
-        FileOutputStream fileOutputStream = new FileOutputStream(path);
+        FileOutputStream fileOutputStream = new FileOutputStream(path);//.excel sheette olusturdugumuz yeni kutucugu kaydetmek icin bbunlari kesinlikle yazmaliyiz
         workbook.write(fileOutputStream);
 //        Close the file
         fileInputStream.close();

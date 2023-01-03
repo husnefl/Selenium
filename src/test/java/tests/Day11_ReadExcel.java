@@ -15,7 +15,7 @@ public class Day11_ReadExcel {
 //        ".\\src\\test\\java\\resources\\Capitals.xlsx" //WINDOWS
 //        Open the file
         FileInputStream fileInputStream = new FileInputStream(path);
-//        Open the workbook using fileinputstream
+//        Open the workbook using fileInputStream
         Workbook workbook = WorkbookFactory.create(fileInputStream);
 //        Open the first worksheet
         Sheet sheet1 = workbook.getSheet("Sheet1");
@@ -43,6 +43,12 @@ public class Day11_ReadExcel {
 //        Find the number of used row
         int numberOfData = sheet1.getPhysicalNumberOfRows();//index starts at 1. Returns the number of row that has a DATA
         System.out.println("Number of Data : "+numberOfData);
+        //go to 5th row 2nd cell
+        String r5c2 = sheet1.getRow(4).getCell(1).toString();
+        System.out.println(r5c2);//Ankara
+        //go to 9th row 1st cell
+        String r9c1 = sheet1.getRow(8).getCell(0).toString();
+        System.out.println(r9c1);//GERMANY
 //        Print country, capitol key value pairs as map object
 //        {{USA,D.C},{ France,Paris },...}
 //        Create a Map that will store the country, capital pairs

@@ -17,7 +17,7 @@ public class Day12_WebTables extends TestBase {
             System.out.println(eachElement.getText());
         }
 //        We can get specific cell data
-        System.out.println("5th DATA in the table "+allTableElements.get(5).getText());
+         System.out.println("5th DATA in the table "+allTableElements.get(5).getText());
     }
     @Test
     public void printRows(){
@@ -49,7 +49,7 @@ public class Day12_WebTables extends TestBase {
 //        Task 5 : Write a method that accepts 2 parameters
 //        Parameter 1 = row number
 //        Parameter 2 = column number
-//        printData(2,3);  => prints data in 2nd row 3rd column
+//        printData(2,3);  => prints data in 2nd row 3rd column(cell)
     public void printData(int rowNum, int colNum){
         String xpath = "//table[@id='table1']//tr["+rowNum+"]//td["+colNum+"]";
     }
@@ -57,5 +57,7 @@ public class Day12_WebTables extends TestBase {
     public void printDataTest(){
         printData(2,3);//fbach@yahoo.com
         printData(4,1);//Conway
+        
+
     }
 }

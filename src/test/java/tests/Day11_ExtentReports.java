@@ -63,6 +63,12 @@ public class Day11_ExtentReports extends TestBase {
         extentTest.pass("Asserting the LMS URL");
         Assert.assertEquals("LMS LOGIN PAGE IS NOT DISPLAYED",expectedURL,actualURL);
         extentTest.pass("TEST IS COMPLETE");
+       /*
+       // verify the url 2.way:
+       String lmsUrl = driver.getCurrentUrl();
+        assertEquals("https://lms.techproeducation.com/",lmsUrl);
+        extentTest.pass(Url assertion is done)
+        */
     }
     @Test
     public void extentReportsTest2(){
@@ -81,6 +87,7 @@ public class Day11_ExtentReports extends TestBase {
 
     @AfterClass
     public static void extentReportsTearDown(){
+       //generate the report
         extentReports.flush();
     }
     }
