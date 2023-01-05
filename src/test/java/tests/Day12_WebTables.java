@@ -51,10 +51,12 @@ public class Day12_WebTables extends TestBase {
 //        Parameter 2 = column number
 //        printData(2,3);  => prints data in 2nd row 3rd column(cell)
     public void printData(int rowNum, int colNum){
-        String xpath = "//table[@id='table1']//tr["+rowNum+"]//td["+colNum+"]";
+        String cell =driver.findElement( By.xpath("//table[@id='table1']//tr["+rowNum+"]//td["+colNum+"]")).getText();
+        System.out.println(cell);
     }
     @Test
     public void printDataTest(){
+        driver.get("https://the-internet.herokuapp.com/tables");
         printData(2,3);//fbach@yahoo.com
         printData(4,1);//Conway
         
