@@ -35,3 +35,12 @@ public class Day14_StaleElementException extends TestBase {
 ////        driver.findElement(By.linkText("LMS LOGIN")).click();
 //    }
 //}
+//exceptions in selenium
+/*
+stale exception
+webdriver exception
+timeout exception
+nullpointer exception
+nosuchelement exception
+
+ */
