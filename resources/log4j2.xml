@@ -21,7 +21,7 @@
     </Appenders>
     <!--    Loggers : logs the information. Logger is used to override Root level
     additivity="false" avoids duplicated messages that can come from parent levels.
-    This should be used with Logger-->
+    This should be used with Logger  !!!level="debug"Day15_LogTest classini gosteriyor -->
     <Loggers>
         <!--        SPECIAL SETTING FOR tests.log4Jtests FOLDER-->
         <Logger name="tests.log4Jtests" level="debug" additivity="false">
@@ -30,7 +30,7 @@
         </Logger>
         <!--      Root : provides level to ALL classes on the project
         By default level = error prints errors and fatal
-        level=trace will logs everything-->
+        level=trace will logs everything // Root level="info" Day15_LogJ2 classini gosteriyor. -->
         <Root level="info">
             <AppenderRef ref="Console"/>
             <AppenderRef ref="file"/>

@@ -12,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class Day05_dynamic_xpath {
+public class Day05_dynamic_xpath  {
 
     WebDriver driver;
     @Before

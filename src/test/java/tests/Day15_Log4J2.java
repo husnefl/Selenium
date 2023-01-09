@@ -17,5 +17,6 @@ public class Day15_Log4J2 {
       logger.warn("Warning log !!!!");
       logger.debug("Debug log !!!!");
       logger.info("Info log !!!!");
+
     }
 }
