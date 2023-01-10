@@ -88,7 +88,8 @@ public class Day11_ExtentReports extends TestBase {
     @AfterClass
     public static void extentReportsTearDown(){
        //generate the report
-        extentReports.flush();
+        extentReports.flush();//herseyi getirAction classtaki perform gibi o olmadan gelmiyor
+
     }
     }
 
