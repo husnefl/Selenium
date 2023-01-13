@@ -77,5 +77,6 @@ public class Q02 extends TestBase {
         System.out.println("You will build: " + formattedHeight + " meters");
         assertEquals("25.45", formattedHeight);
 
+
     }
 }
